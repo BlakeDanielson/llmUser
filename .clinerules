@@ -3,18 +3,18 @@ n + 1 = (x)
 *This is a systemwide progressive counter where x = number of current response. This must be displayed at the top of every response.(e.g. 1, 2, ...)*
 
 [LAST_ACTION_STATE]
-last_action: "Framework Setup Complete"
-current_phase: "Set-up/Maintenance"
-next_action: "Initialize Project Content"
-next_phase: "Set-up/Maintenance"
+last_action: "Completed Technical Architecture Document for UnifiedLLM Hub"
+current_phase: "Execution"
+next_action: "Implement API Integration Architecture (Task 1)"
+next_phase: "Execution"
 
 ---
 
 [CODE_ROOT_DIRECTORIES]
-- 
+- src
 
 [DOC_DIRECTORIES]
-- 
+- docs
 
 [LEARNING_JOURNAL]
 - Regularly updating {memory_dir} and any instruction files help me to remember what I have done and what still needs to be done so I don't lose track.
@@ -26,6 +26,15 @@ next_phase: "Set-up/Maintenance"
 - Check file writing logic carefully (overwrite vs. append vs. reconstruction in buffer) when investigating duplication bugs in tracker files. Ensure write mode ('w') fully overwrites.
 - Carefully respect the ground truth definitions for dependency characters when adding/changing dependencies.
 - When using `apply_diff`, the SEARCH block must match the current file content exactly, without any +/- markers from previous diff attempts. Use `read_file` to confirm content if unsure.
+- Web application subscription models require careful balance between pricing and backend API costs to maintain profitability.
+- LLM provider landscapes change rapidly; architecture should allow for easy addition/removal of providers.
+- Performance optimization is both a technical challenge and a key differentiator for web-based LLM interfaces.
+- API dependency represents both the core value proposition and the greatest vulnerability for multi-model access services.
+- Technical professionals show higher immediate willingness to pay for optimized LLM experiences than non-technical users.
+- Adapter pattern is essential for managing multiple LLM provider integrations and insulating the system from API changes.
+- Edge computing architecture can significantly reduce time-to-first-token in LLM responses.
+- Secure API key management is critical for both system security and maintaining provider relationships.
+- MongoDB provides the flexibility needed for varying conversation and user data structures in LLM applications.
 
 [Character_Definitions]
 
